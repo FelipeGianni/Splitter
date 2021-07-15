@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: $font-md;
+  font-weight: 700;
+  line-height: 1.5;
+  color: $darkGrayishCyan;
+  background-color: $lightGrayishCyan;
+
+  @include breakpoint-up("large") {
+    overflow-y: hidden;
+  }
+}
+
+button, input {
+  border: 0;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: $font-lg;
+  font-weight: inherit;
+  line-height: inherit;
+
+  @include breakpoint-up("large") {
+    font-size: $font-xl;
+  }
+}
+
+input:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 2px 2px $strongCyan;
+}
+
+input.error:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 2px 2px $orange;
+}
+
+button {
+  height: 50px;
+  background-color: $veryDarkCyan;
+  color: $white;
+  cursor: pointer;
+}
+
+button.selected {
+  background-color: $strongCyan;
+  color: $veryDarkCyan;
+}
+
+button:active {
+  background-color: $lightCyan;
+  color: $veryDarkCyan;
+}

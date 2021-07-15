@@ -1,0 +1,62 @@
+.result {
+  padding: 24px;
+  background-color: $veryDarkCyan;
+  border-radius: 20px;
+  margin-bottom: 0;
+
+  @include breakpoint-up("large") {
+    width: 420px;
+    padding: 50px 40px 24px;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: $font-xl;
+    color: $strongCyan;
+  }
+
+  &__label {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      display: block;
+      margin-bottom: 0;
+  
+      p:first-child {
+        color: $lightGrayishCyan2;
+        font-size: $font-md;
+      }
+  
+      p:last-child {
+        color: $darkGrayishCyan;
+        font-size: $font-sm;
+      }
+    }
+
+    p {
+      font-size: $font-xxl;
+    }
+  }
+
+  &__label:nth-child(2) {
+
+    @include breakpoint-up("large") {
+      margin-bottom: 135px;
+    }
+  }
+
+  &__reset {
+    width: 100%;
+    bottom: 0;
+    font-size: $font-lg;
+    background-color: $strongCyan;
+    color: $veryDarkCyan;  
+  }
+}
