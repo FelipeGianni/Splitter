@@ -2,7 +2,7 @@ import React from 'react';
 
 const Result = () => {
   return (
-    <div class="result">
+    <div className="result">
       <div className="result__label">
         <div className="title">
           <p>Tip Amount</p>
