@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: $font-md;
   font-weight: 700;
   line-height: 1.5;
@@ -20,7 +20,8 @@ body {
   }
 }
 
-button, input {
+button,
+input {
   border: 0;
   border-radius: 5px;
   font-family: inherit;
@@ -44,7 +45,7 @@ input.error:focus-visible {
 }
 
 button {
-  height: 50px;
+  height: 3.125rem;
   background-color: $veryDarkCyan;
   color: $white;
   cursor: pointer;

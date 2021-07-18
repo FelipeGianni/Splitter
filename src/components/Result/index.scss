@@ -1,12 +1,12 @@
 .result {
-  padding: 24px;
+  padding: 1.5rem;
   background-color: $veryDarkCyan;
   border-radius: 20px;
   margin-bottom: 0;
 
   @include breakpoint-up("large") {
-    width: 420px;
-    padding: 50px 40px 24px;
+    width: 26.25rem;
+    padding: 3.125rem 2.5rem 1.5rem;
   }
 
   p {
@@ -17,7 +17,7 @@
 
   &__label {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -28,12 +28,12 @@
     .title {
       display: block;
       margin-bottom: 0;
-  
+
       p:first-child {
         color: $lightGrayishCyan2;
         font-size: $font-md;
       }
-  
+
       p:last-child {
         color: $darkGrayishCyan;
         font-size: $font-sm;
@@ -46,9 +46,8 @@
   }
 
   &__label:nth-child(2) {
-
     @include breakpoint-up("large") {
-      margin-bottom: 135px;
+      margin-bottom: 8.4375rem;
     }
   }
 
@@ -57,6 +56,6 @@
     bottom: 0;
     font-size: $font-lg;
     background-color: $strongCyan;
-    color: $veryDarkCyan;  
+    color: $veryDarkCyan;
   }
 }
